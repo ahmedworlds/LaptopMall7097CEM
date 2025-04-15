@@ -28,7 +28,7 @@ const About = () => {
               <li className="mb-2">✓ Fast delivery service</li>
             </ul>
           </article>
-        </div>
+        </div> 
         
         <div className="col-md-6 mb-4">
           <img
