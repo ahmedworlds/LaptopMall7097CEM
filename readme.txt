@@ -1,4 +1,4 @@
-
+Projecct guide:
 
 1. Run the API server:
 cls; node server/api.js
