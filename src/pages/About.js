@@ -7,7 +7,7 @@ const About = () => {
       <meta itemProp="keywords" content="laptop store, computer shop, tech support, laptop accessories" />
       
       <header className="bg-transparent shadow-none">
-        <h1 className="text-center mb-4 text-dark" itemProp="name">About Us</h1>
+        <h1 className="text-center mb-4 text-dark"  itemProp="name">About Us</h1>
       </header>
 
       <section className="row" aria-label="Company Information">
