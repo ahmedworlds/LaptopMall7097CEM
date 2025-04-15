@@ -1,0 +1,86 @@
+
+
+/* Dark top bar */
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Items in a row */
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-start; 
+  flex-wrap: nowrap; 
+}
+
+/* Shopping cart button */
+.cart-toggle {
+  padding: 10px 15px;
+  font-size: 1rem; 
+}
+
+/* Small user picture */
+.profile-picture {
+  width: 35px; 
+  height: 35px;
+  font-size: 0.9rem; 
+}
+
+/* User display name */
+.user-name {
+  margin-left: 10px;
+  font-size: 0.9rem; 
+}
+
+/* Gray action buttons */
+.btn-secondary {
+  font-size: 0.9rem;
+}
+
+/* Blue circle avatar */
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff; 
+  color: white; 
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Yellow clickable name */
+.user-name {
+  color: #ffcc00; 
+  text-decoration: none; 
+  font-weight: bold; 
+  cursor: pointer; 
+  margin-left: 10px; 
+}
+
+/* Name highlight effect */
+.user-name:hover {
+  color: #ff9900; 
+  text-decoration: underline; 
+}
+
+/* Sticky cart corner */
+.cart-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}

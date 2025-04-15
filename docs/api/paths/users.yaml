@@ -1,0 +1,28 @@
+{
+  "/api/users/profile": {
+    "get": {
+      "tags": ["Users"],
+      "summary": "Get user profile",
+      "security": [
+        {
+          "bearerAuth": []
+        }
+      ],
+      "responses": {
+        "200": {
+          "description": "User profile data",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/User"
+              }
+            }
+          }
+        },
+        "401": {
+          "description": "Unauthorized"
+        }
+      }
+    }
+  }
+}

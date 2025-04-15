@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: laptopmall-backend
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: node server/api.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWORD
+        sync: false
+      - key: DB_HOST
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_NAME
+        sync: false
+
+  - type: static
+    name: laptopmall-frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://laptopmall-backend.onrender.com

@@ -1,0 +1,55 @@
+{
+  "Review": {
+    "type": "object",
+    "required": ["id", "userId", "productId", "rating", "comment"],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "example": 1
+      },
+      "userId": {
+        "type": "integer",
+        "example": 1
+      },
+      "productId": {
+        "type": "integer",
+        "example": 1
+      },
+      "rating": {
+        "type": "number",
+        "minimum": 1,
+        "maximum": 5,
+        "example": 4.5
+      },
+      "comment": {
+        "type": "string",
+        "example": "Great laptop, excellent performance!"
+      },
+      "createdAt": {
+        "type": "string",
+        "format": "date-time",
+        "example": "2023-11-15T10:30:00Z"
+      }
+    }
+  },
+  "ReviewInput": {
+    "type": "object",
+    "required": ["productId", "rating", "comment"],
+    "properties": {
+      "productId": {
+        "type": "integer",
+        "example": 1
+      },
+      "rating": {
+        "type": "number",
+        "minimum": 1,
+        "maximum": 5,
+        "example": 4.5
+      },
+      "comment": {
+        "type": "string",
+        "example": "Great laptop, excellent performance!"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+*.env binary
+render.yaml binary
+*.pem binary
+*.key binary
+*.p12 binary
+*.pfx binary
+*.cert binary

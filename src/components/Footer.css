@@ -1,0 +1,23 @@
+
+/* Dark bottom bar */
+footer {
+  background-color: #333; 
+  color: white; 
+  padding: 20px 0; 
+}
+
+/* Social media links */
+.social-icons {
+  font-size: 1.5rem; 
+}
+
+/* Link decoration */
+.social-icons a {
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+
+/* Hover highlight */
+.social-icons a:hover {
+  color: #ffcc00; 
+}

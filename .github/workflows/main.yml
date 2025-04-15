@@ -1,0 +1,49 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+    - name: Install Dependencies
+      run: npm install
+    - name: Run ESLint
+      run: npm run lint
+
+  test:
+    needs: lint
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18'
+    - name: Install Dependencies
+      run: npm install
+    - name: Run Tests
+      run: npm test -- --watchAll=false --testPathIgnorePatterns=UserApi.test.js TechNewsApi.test.js ProductApi.test.js
+
+  deploy:
+    needs: test
+    runs-on: windows-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - name: Check Deployment
+      run: |
+        $response = Invoke-WebRequest -Uri "https://laptopmall-frontend.onrender.com" -Method GET
+        if ($response.StatusCode -eq 200) {
+          Write-Host "Deployment successful!"
+        } else {
+          Write-Error "Deployment check failed!"
+          exit 1
+        }

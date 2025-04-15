@@ -1,0 +1,27 @@
+#!/bin/sh
+
+commit_msg=$(cat "$1")
+pattern="^(feat|fix|docs|style|refactor|test|chore|html|css|api|pwa|ui|perf|test|ci):.+$"
+
+if ! echo "$commit_msg" | grep -E "$pattern" > /dev/null; then
+    echo "Error: Invalid commit message format."
+    echo "Please use format: <type>: <description>"
+    echo "Types:"
+    echo "  feat: New feature"
+    echo "  fix: Bug fix"
+    echo "  html: HTML5 structure changes"
+    echo "  css: Styling and responsive design"
+    echo "  api: API endpoints and methods"
+    echo "  pwa: Progressive Web App features"
+    echo "  ui: User interface components"
+    echo "  perf: Performance improvements"
+    echo "  test: Adding/updating tests"
+    echo "  ci: CI/CD pipeline changes"
+    echo "  docs: Documentation"
+    echo "  style: Code style/formatting"
+    echo "  refactor: Code refactoring"
+    echo "  chore: Maintenance tasks"
+    exit 1
+fi
+
+exit 0

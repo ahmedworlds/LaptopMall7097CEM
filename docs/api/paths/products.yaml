@@ -1,0 +1,46 @@
+{
+  "/api/products": {
+    "get": {
+      "tags": ["Products"],
+      "summary": "Get all products",
+      "description": "Retrieves a list of all available laptops",
+      "responses": {
+        "200": {
+          "description": "Successful response",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "post": {
+      "tags": ["Products"],
+      "summary": "Add new product",
+      "requestBody": {
+        "required": true,
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/Product"
+            }
+          }
+        }
+      },
+      "responses": {
+        "201": {
+          "description": "Product created successfully"
+        },
+        "400": {
+          "description": "Invalid input"
+        }
+      }
+    }
+  }
+}

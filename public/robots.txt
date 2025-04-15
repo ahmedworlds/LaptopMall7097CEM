@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /products/
+Allow: /about/
+Allow: /contact/
+Allow: /services/
+Allow: /technews/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /checkout/
+Disallow: /cart/
+
+# Sitemaps
+Sitemap: https://laptopmall.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10

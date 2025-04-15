@@ -1,0 +1,51 @@
+{
+  "Order": {
+    "type": "object",
+    "required": ["id", "userId", "products", "totalAmount"],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Unique order identifier",
+        "example": 1
+      },
+      "userId": {
+        "type": "integer",
+        "description": "ID of the user who placed the order",
+        "example": 1
+      },
+      "products": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "productId": {
+              "type": "integer",
+              "example": 1
+            },
+            "quantity": {
+              "type": "integer",
+              "example": 2
+            }
+          }
+        }
+      },
+      "totalAmount": {
+        "type": "number",
+        "description": "Total order amount in GBP",
+        "example": 2599.98
+      },
+      "orderDate": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Order creation timestamp",
+        "example": "2023-11-15T14:30:00Z"
+      },
+      "status": {
+        "type": "string",
+        "enum": ["pending", "confirmed", "shipped", "delivered"],
+        "description": "Current order status",
+        "example": "confirmed"
+      }
+    }
+  }
+}

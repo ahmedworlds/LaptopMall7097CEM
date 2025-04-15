@@ -1,0 +1,59 @@
+
+
+
+### Get System Status
+GET http://localhost:5000/api/system/status
+
+
+
+###
+GET http://localhost:5000/api/products
+
+
+### Get Tech News Test
+GET http://localhost:5000/api/technews
+
+### Get Logo
+GET http://localhost:5000/api/logo
+
+
+
+
+
+
+### Login to get token
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "email": "admin1@example.com",
+    "password": "password"
+}
+
+### Token from Login
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhZG1pbjEiLCJlbWFpbCI6ImFkbWluMUBleGFtcGxlLmNvbSIsImlhdCI6MTc0NDY0Mjg2MiwiZXhwIjoxNzQ0NjQ2NDYyfQ.SgX6nT5IbnSKDRV7fjborsKLsreP4450RtYGLkbdjXE
+
+### Get Admin Users (Using Token)
+GET http://localhost:5000/api/admin/usermanagement
+Authorization: Bearer {{token}}
+
+### Get Sales Report (Using Token)
+GET http://localhost:5000/api/admin/salesreport
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+
+### POST to Gemini API Test
+POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent
+Content-Type: application/json
+x-goog-api-key: AIzaSyAPghmOwXS38pAE5Xyakz3V_CjJPNFw-nA
+
+{
+  "contents": [{"parts": [{"text": "Please provide details about the laptop (MacBook Pro 16) in the following plaintext format exactly without explanations or any additional text using | and = separators:|brand=brand name|price=plain integer numeric price in GBP|specifications=detailed specs in numbers and letters only limited by 45 characters|rating=number between 1-5|image=direct image URL from Amazon|"}]}]
+}
+
+

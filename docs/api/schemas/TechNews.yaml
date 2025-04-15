@@ -1,0 +1,60 @@
+{
+  "TechNews": {
+    "type": "object",
+    "required": ["id", "title", "summary", "date"],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "example": 1
+      },
+      "title": {
+        "type": "string",
+        "example": "Latest MacBook Pro Release"
+      },
+      "summary": {
+        "type": "string",
+        "example": "Apple announces new MacBook Pro with improved performance and battery life"
+      },
+      "content": {
+        "type": "string"
+      },
+      "date": {
+        "type": "string",
+        "format": "date-time",
+        "example": "2023-11-15T14:30:00Z"
+      },
+      "source": {
+        "type": "string",
+        "example": "TechReview"
+      },
+      "imageUrl": {
+        "type": "string",
+        "format": "uri",
+        "example": "https://example.com/images/news/macbook.jpg"
+      }
+    }
+  },
+  "TechNewsResponse": {
+    "type": "object",
+    "properties": {
+      "items": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/TechNews"
+        }
+      },
+      "total": {
+        "type": "integer",
+        "example": 50
+      },
+      "page": {
+        "type": "integer",
+        "example": 1
+      },
+      "limit": {
+        "type": "integer",
+        "example": 10
+      }
+    }
+  }
+}

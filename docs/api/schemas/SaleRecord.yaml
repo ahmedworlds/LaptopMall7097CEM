@@ -1,0 +1,25 @@
+{
+  "SaleRecord": {
+    "type": "object",
+    "required": ["id", "user_name", "total_amount", "created_at"],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "example": 1
+      },
+      "user_name": {
+        "type": "string",
+        "example": "John Doe"
+      },
+      "total_amount": {
+        "type": "number",
+        "example": 1299.99
+      },
+      "created_at": {
+        "type": "string",
+        "format": "date-time",
+        "example": "2023-11-15T14:30:00Z"
+      }
+    }
+  }
+}

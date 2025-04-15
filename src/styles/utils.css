@@ -1,0 +1,32 @@
+/* Grid Layout System */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Flexbox Layout System */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CSS Variables */
+:root {
+  --primary-color: #444;
+  --secondary-color: #555;
+  --accent-color: #ffcc00;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+}

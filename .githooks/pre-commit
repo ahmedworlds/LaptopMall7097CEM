@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Run unit tests (excluding API tests that require server)
+npm run test:unit || exit 1
+
+# Check for sensitive information in staged files
+if git diff --cached --name-only | grep -E "\.(js|jsx|json|yaml|yml)$" | xargs grep -l "API_KEY\|SECRET\|PASSWORD\|CREDENTIAL"; then
+    echo "Warning: Possible sensitive information detected in staged files"
+    exit 1
+fi
+
+exit 0

@@ -1,0 +1,34 @@
+{
+  "User": {
+    "type": "object",
+    "required": ["id", "email", "name"],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Unique identifier for the user",
+        "example": 1
+      },
+      "email": {
+        "type": "string",
+        "format": "email",
+        "description": "User's email address",
+        "example": "user@example.com"
+      },
+      "name": {
+        "type": "string",
+        "description": "User's full name",
+        "example": "John Doe"
+      },
+      "phone": {
+        "type": "string",
+        "description": "Contact number",
+        "example": "+44 123 456 7890"
+      },
+      "address": {
+        "type": "string",
+        "description": "Delivery address",
+        "example": "123 Main St, London"
+      }
+    }
+  }
+}

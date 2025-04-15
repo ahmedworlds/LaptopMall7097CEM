@@ -1,0 +1,40 @@
+{
+  "Product": {
+    "type": "object",
+    "required": ["id", "name", "price"],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Unique identifier for the product",
+        "example": 1
+      },
+      "name": {
+        "type": "string",
+        "description": "Name of the laptop",
+        "example": "MacBook Pro M1"
+      },
+      "price": {
+        "type": "number",
+        "description": "Current price in GBP",
+        "example": 1299.99
+      },
+      "brand": {
+        "type": "string",
+        "description": "Laptop manufacturer",
+        "example": "Apple"
+      },
+      "specifications": {
+        "type": "string",
+        "description": "Technical specifications",
+        "example": "8GB RAM, 256GB SSD"
+      },
+      "rating": {
+        "type": "number",
+        "description": "Customer rating",
+        "minimum": 0,
+        "maximum": 5,
+        "example": 4.5
+      }
+    }
+  }
+}

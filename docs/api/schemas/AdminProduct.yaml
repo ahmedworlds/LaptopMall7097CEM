@@ -1,0 +1,63 @@
+{
+  "AdminProduct": {
+    "type": "object",
+    "required": ["id", "name", "brand", "price"],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "example": 1
+      },
+      "name": {
+        "type": "string",
+        "example": "MacBook Pro M1"
+      },
+      "brand": {
+        "type": "string",
+        "example": "Apple"
+      },
+      "price": {
+        "type": "number",
+        "example": 1299.99
+      },
+      "image": {
+        "type": "string",
+        "format": "uri",
+        "example": "https://example.com/images/macbook.jpg"
+      },
+      "specifications": {
+        "type": "string",
+        "example": "8GB RAM, 256GB SSD"
+      },
+      "rating": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 5,
+        "example": 4.5
+      }
+    }
+  },
+  "AdminProductInput": {
+    "type": "object",
+    "required": ["name", "brand", "price"],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "brand": {
+        "type": "string"
+      },
+      "price": {
+        "type": "number"
+      },
+      "image": {
+        "type": "string"
+      },
+      "specifications": {
+        "type": "string"
+      },
+      "rating": {
+        "type": "number"
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+/* Card animation */
+.card {
+  transition: transform 0.2s;
+  margin-bottom: 20px;
+}
+
+/* Hover zoom */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Product image */
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Product name */
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Product details */
+.card-text {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Green cart button */
+.btn-add-to-cart {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Button highlight */
+.btn-add-to-cart:hover {
+  background-color: #218838;
+}

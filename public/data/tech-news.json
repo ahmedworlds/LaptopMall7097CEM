@@ -1,0 +1,52 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "Latest MacBook Pro Release",
+      "summary": "Apple announces new MacBook Pro with enhanced performance and battery life",
+      "date": "2025-03-15T10:00:00Z",
+      "icon": "fa-laptop-code",
+      "category": "innovation"
+    },
+    {
+      "id": 2,
+      "title": "Dell XPS Series Update",
+      "summary": "Dell refreshes XPS lineup with new Intel processors and improved displays",
+      "date": "2025-03-14T09:30:00Z",
+      "icon": "fa-microchip",
+      "category": "innovation"
+    },
+    {
+      "id": 3,
+      "title": "Gaming Laptop Trends 2025",
+      "summary": "New gaming laptops focus on power efficiency without compromising performance",
+      "date": "2025-03-13T14:00:00Z",
+      "icon": "fa-gamepad",
+      "category": "gaming"
+    },
+    {
+      "id": 4,
+      "title": "HP's Revolutionary Battery Tech",
+      "summary": "HP introduces new battery technology promising 24-hour laptop usage on a single charge",
+      "date": "2025-03-12T11:15:00Z",
+      "icon": "fa-battery-full",
+      "category": "innovation"
+    },
+    {
+      "id": 5,
+      "title": "Lenovo's AI Assistant Launch",
+      "summary": "Lenovo unveils built-in AI assistant for ThinkPad series, revolutionizing user experience",
+      "date": "2025-03-11T16:45:00Z",
+      "icon": "fa-robot",
+      "category": "ai"
+    },
+    {
+      "id": 6,
+      "title": "Sustainable Laptop Manufacturing",
+      "summary": "Major manufacturers commit to eco-friendly laptop production using recycled materials",
+      "date": "2025-03-10T13:20:00Z",
+      "icon": "fa-leaf",
+      "category": "sustainability"
+    }
+  ]
+}

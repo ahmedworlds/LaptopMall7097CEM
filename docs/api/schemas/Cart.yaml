@@ -1,0 +1,32 @@
+{
+  "Cart": {
+    "type": "object",
+    "properties": {
+      "items": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/CartItem"
+        }
+      },
+      "totalAmount": {
+        "type": "number",
+        "example": 2599.98
+      }
+    }
+  },
+  "CartItem": {
+    "type": "object",
+    "required": ["productId", "quantity"],
+    "properties": {
+      "productId": {
+        "type": "integer",
+        "example": 1
+      },
+      "quantity": {
+        "type": "integer",
+        "minimum": 1,
+        "example": 2
+      }
+    }
+  }
+}

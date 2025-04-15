@@ -1,0 +1,76 @@
+{
+  "qa": [
+    {
+      "question": "what is SSD",
+      "answer": "SSD (Solid State Drive) is a fast storage device that has no moving parts, offering quicker data access than traditional hard drives."
+    },
+    {
+      "question": "what is RAM",
+      "answer": "RAM (Random Access Memory) is temporary memory that helps your laptop run programs smoothly. More RAM means better multitasking."
+    },
+    {
+      "question": "best RAM for laptop",
+      "answer": "16GB DDR4 or DDR5 RAM is currently optimal for most users. 32GB for heavy multitasking or content creation."
+    },
+    {
+      "question": "how to choose laptop",
+      "answer": "Consider: 1) Usage purpose 2) Processor (i5/i7/Ryzen) 3) RAM (16GB min) 4) Storage type (SSD preferred) 5) Battery life"
+    },
+    {
+      "question": "what is processor",
+      "answer": "A processor (CPU) is the brain of your laptop. It handles all computations. Common brands are Intel (i3/i5/i7/i9) and AMD (Ryzen)."
+    },
+    {
+      "question": "gaming laptop requirements",
+      "answer": "Gaming laptops need: 1) Dedicated GPU 2) i7/Ryzen 7 or better 3) 16GB+ RAM 4) SSD storage 5) Good cooling system"
+    },
+    {
+      "question": "what is GPU",
+      "answer": "GPU (Graphics Processing Unit) handles visual data. Essential for gaming and design work. Popular brands: NVIDIA RTX/GTX, AMD Radeon."
+    },
+    {
+      "question": "laptop battery life",
+      "answer": "Good battery life is 8+ hours. Gaming laptops: 3-6 hours. Ultrabooks can reach 12+ hours. Affected by screen brightness and usage."
+    },
+    {
+      "question": "best laptop brands",
+      "answer": "Top brands: Apple (MacBook), Dell (XPS), Lenovo (ThinkPad), HP (Spectre), ASUS (ROG for gaming). Each excels in different areas."
+    },
+    {
+      "question": "student laptop recommendation",
+      "answer": "For students: 1) i5/Ryzen 5 CPU 2) 16GB RAM 3) 512GB SSD 4) 8+ hour battery 5) Lightweight design. MacBook Air or Dell XPS are good options."
+    },
+    {
+      "question": "difference HDD and SSD",
+      "answer": "HDD uses spinning disks (slower, cheaper, more storage). SSD has no moving parts (faster, reliable, expensive but prices dropping)."
+    },
+    {
+      "question": "laptop screen types",
+      "answer": "Common types: 1) IPS (best colors) 2) OLED (perfect blacks) 3) TN (fast, poor viewing angles). Resolution: 1080p minimum, 4K for content creation."
+    },
+    {
+      "question": "what is touchscreen laptop",
+      "answer": "A laptop with a screen you can touch to interact. Good for artists and note-taking. Often comes with stylus support."
+    },
+    {
+      "question": "laptop cooling tips",
+      "answer": "Keep vents clear, use cooling pad, clean dust regularly, avoid soft surfaces like beds, update drivers for better power management."
+    },
+    {
+      "question": "what is thunderbolt port",
+      "answer": "High-speed port for data transfer, charging, and connecting displays. Thunderbolt 4 supports up to 40Gbps transfer speeds."
+    },
+    {
+      "question": "business laptop features",
+      "answer": "Look for: 1) Good build quality 2) Security features 3) Long battery 4) Professional design 5) Good warranty coverage"
+    },
+    {
+      "question": "laptop wifi types",
+      "answer": "WiFi 6 (802.11ax) is newest, fastest. WiFi 5 (802.11ac) still common. Better WiFi means faster internet and less interference."
+    },
+    {
+      "question": "how often replace laptop",
+      "answer": "Average lifespan 3-5 years. Gaming laptops might need upgrade sooner. Business laptops can last longer with good care."
+    }
+  ]
+}
