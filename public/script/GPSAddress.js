@@ -19,7 +19,7 @@ function getGPSCoordinates() {
   
   // formatted address from OpenCage API
   async function getFormattedAddress(latitude, longitude) {
-    const apiKey = '1aa8180ceaef4d26be004c84ac310d51'; // Replace with your actual API key
+    const apiKey = 'z1aa8180ceaef4d26be004c84ac310d51'; 
     const url = `https://api.opencagedata.com/geocode/v1/json?key=${apiKey}&q=${latitude}+${longitude}&pretty=1&no_annotations=1`;
   
     try {
