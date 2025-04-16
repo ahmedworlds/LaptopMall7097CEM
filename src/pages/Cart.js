@@ -24,7 +24,7 @@ const Cart = ({ toggleCartPanel }) => {
                 <div className="card-body d-flex justify-content-between align-items-center">
                   <div>
                     <h2 className="card-title">{item.name}</h2>
-                    <p className="card-text"><strong>Price:</strong> ${item.price}</p>
+                    <p className="card-text"><strong>Price:</strong> £{item.price}</p>
                     <p className="card-text"><strong>Quantity:</strong> {item.quantity}</p>
                   </div>
                   <div>
@@ -40,7 +40,7 @@ const Cart = ({ toggleCartPanel }) => {
             ))}
           </section>
           <div className="d-flex justify-content-between align-items-center">
-            <h3>Total: ${totalPrice.toFixed(2)}</h3>
+            <h3>Total: £{totalPrice.toFixed(2)}</h3>
             <Link
               to="/checkout"
               className="btn btn-primary"

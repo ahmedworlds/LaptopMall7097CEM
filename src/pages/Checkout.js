@@ -124,7 +124,7 @@ const Checkout = () => {
               <div key={item.id} className="card mb-3">
                 <div className="card-body">
                   <h2 className="card-title">{item.name}</h2>
-                  <p className="card-text"><strong>Price:</strong> ${item.price}</p>
+                  <p className="card-text"><strong>Price:</strong> £{item.price}</p>
                   <p className="card-text"><strong>Quantity:</strong> {item.quantity}</p>
                 </div>
               </div>

@@ -117,7 +117,7 @@ const Products = () => {
               <div className="card-body">
                 <h2 className="card-title">{product.name}</h2>
                 <p className="card-text"><strong>Brand:</strong> {product.brand}</p>
-                <p className="card-text"><strong>Price:</strong> ${product.price}</p>
+                <p className="card-text"><strong>Price:</strong> £{product.price}</p>
                 <p className="card-text">
                   <strong>Specifications:</strong> {product.specifications}
                 </p>
