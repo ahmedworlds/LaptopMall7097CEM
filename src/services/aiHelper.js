@@ -8,7 +8,7 @@ export const getLaptopDetails = async (productName) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-goog-api-key': 'AIzaSyAPghmOwXS38pAE5Xyakz3V_CjJPNFw-nA'
+        'x-goog-api-key': 'zAIzaSyAPghmOwXS38pAE5Xyakz3V_CjJPNFw-nA'
       },
       body: JSON.stringify({
         contents: [{
